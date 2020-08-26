@@ -5172,6 +5172,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"api@workspace:examples/api":
+  version: 0.0.0-use.local
+  resolution: "api@workspace:examples/api"
+  languageName: unknown
+  linkType: soft
+
 "append-buffer@npm:^1.0.2":
   version: 1.0.2
   resolution: "append-buffer@npm:1.0.2"
@@ -6786,6 +6792,12 @@ __metadata:
   checksum: caf4b96491c2ea6fc5e6e23cebc526040cf21779ffc544c705a21b788f7dc3d34bc439878dcdfae8c15830052be55d62b26acada13da1236142d3efc5b4329be
   languageName: node
   linkType: hard
+
+"config@workspace:examples/config":
+  version: 0.0.0-use.local
+  resolution: "config@workspace:examples/config"
+  languageName: unknown
+  linkType: soft
 
 "console-browserify@npm:^1.1.0":
   version: 1.2.0

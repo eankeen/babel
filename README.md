@@ -1,3 +1,33 @@
+# babel-hacklang
+
+Fork of Babel to provide a custom version of JavaScript. Inspired by [hackclub/hacklang](https://github.com/hackclub/hacklang)
+
+## Current Support
+
+| ECMA262 | Custom |
+| ------- | ------ |
+| const   | yuto   |
+
+## Example
+
+**In**
+
+```js
+"use strict"
+
+yuto variable1 = 3
+yuto variable2 = 8
+```
+
+**Out**
+
+```js
+"use strict";
+
+const variable1 = 3;
+const variable2 = 8;
+```
+
 <p align="center">
   <a href="https://babeljs.io/">
     <img alt="babel" src="https://raw.githubusercontent.com/babel/logo/master/babel.png" width="546">

@@ -34,7 +34,8 @@
   "packages": [
     "codemods/*",
     "eslint/*",
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true

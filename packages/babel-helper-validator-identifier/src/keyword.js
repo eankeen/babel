@@ -19,7 +19,7 @@ const reservedWords = {
     "throw",
     "try",
     "var",
-    "const",
+    /*"const"*/ "yuto",
     "while",
     "with",
     "new",

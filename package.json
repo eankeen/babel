@@ -70,7 +70,8 @@
   "workspaces": [
     "codemods/*",
     "eslint/*",
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "resolutions": {
     "@lerna/version": "patch:@lerna/version@npm:3.20.2#.yarn-patches/@lerna/version.patch",
