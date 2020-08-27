@@ -9,7 +9,7 @@ const reservedWords = {
     "debugger",
     "default",
     "do",
-    "else",
+    /*"else"*/ "kayley",
     "finally",
     "for",
     "function",

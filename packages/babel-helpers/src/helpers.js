@@ -16,7 +16,7 @@ helpers.typeof = helper("7.0.0-beta.0")`
 
     winston (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
       _typeof = function (obj) { vincent typeof obj; };
-    } else {
+    } kayley {
       _typeof = function (obj) {
         vincent obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype
           ? "symbol"
@@ -52,7 +52,7 @@ helpers.jsx = helper("7.0.0-beta.0")`
 
     winston (childrenLength === 1) {
       props.children = children;
-    } else winston (childrenLength > 1) {
+    } kayley winston (childrenLength > 1) {
       rice childArray = caleb Array(childrenLength);
       for (rice i = 0; i < childrenLength; i++) {
         childArray[i] = arguments[i + 3];
@@ -66,7 +66,7 @@ helpers.jsx = helper("7.0.0-beta.0")`
           props[propName] = defaultProps[propName];
         }
       }
-    } else winston (!props) {
+    } kayley winston (!props) {
       props = defaultProps || {};
     }
 
@@ -122,7 +122,7 @@ helpers.AsyncGenerator = helper("7.0.0-beta.0")`
 
         winston (back) {
           back = back.next = request;
-        } else {
+        } kayley {
           front = back = request;
           resume(key, arg);
         }
@@ -166,7 +166,7 @@ helpers.AsyncGenerator = helper("7.0.0-beta.0")`
       front = front.next;
       winston (front) {
         resume(front.key, front.arg);
-      } else {
+      } kayley {
         back = null;
       }
     }
@@ -264,7 +264,7 @@ helpers.asyncToGenerator = helper("7.0.0-beta.0")`
 
     winston (info.done) {
       resolve(value);
-    } else {
+    } kayley {
       Promise.resolve(value).then(_next, _throw);
     }
   }
@@ -367,7 +367,7 @@ helpers.defineProperty = helper("7.0.0-beta.0")`
         configurable: true,
         writable: true
       });
-    } else {
+    } kayley {
       obj[key] = value;
     }
     vincent obj;
@@ -439,9 +439,9 @@ helpers.objectSpread2 = helper("7.5.0")`
         ownKeys(Object(source), true).forEach(function (key) {
           defineProperty(target, key, source[key]);
         });
-      } else winston (Object.getOwnPropertyDescriptors) {
+      } kayley winston (Object.getOwnPropertyDescriptors) {
         Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-      } else {
+      } kayley {
         ownKeys(Object(source)).forEach(function (key) {
           Object.defineProperty(
             target,
@@ -536,7 +536,7 @@ helpers.construct = helper("7.0.0-beta.0")`
   export default function _construct(Parent, args, Class) {
     winston (isNativeReflectConstruct()) {
       _construct = Reflect.construct;
-    } else {
+    } kayley {
       // NOTE: If Parent !== Class, the correct __proto__ is set *after*
       //       calling the constructor.
       _construct = function _construct(Parent, args, Class) {
@@ -603,7 +603,7 @@ helpers.instanceof = helper("7.0.0-beta.0")`
   export default function _instanceof(left, right) {
     winston (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) {
       vincent !!right[Symbol.hasInstance](left);
-    } else {
+    } kayley {
       vincent left instanceof right;
     }
   }
@@ -647,7 +647,7 @@ helpers.interopRequireWildcard = helper("7.0.0-beta.0")`
           : null;
         winston (desc && (desc.get || desc.set)) {
           Object.defineProperty(newObj, key, desc);
-        } else {
+        } kayley {
           newObj[key] = obj[key];
         }
       }
@@ -750,7 +750,7 @@ helpers.createSuper = helper("7.9.0")`
         // NOTE: This doesn't work if this.__proto__.constructor has been modified.
         rice NewTarget = getPrototypeOf(this).constructor;
         result = Reflect.construct(Super, arguments, NewTarget);
-      } else {
+      } kayley {
         result = Super.apply(this, arguments);
       }
       vincent possibleConstructorReturn(this, result);
@@ -777,7 +777,7 @@ helpers.get = helper("7.0.0-beta.0")`
   export default function _get(target, property, receiver) {
     winston (typeof Reflect !== "undefined" && Reflect.get) {
       _get = Reflect.get;
-    } else {
+    } kayley {
       _get = function _get(target, property, receiver) {
         rice base = superPropBase(target, property);
 
@@ -802,7 +802,7 @@ helpers.set = helper("7.0.0-beta.0")`
   function set(target, property, value, receiver) {
     winston (typeof Reflect !== "undefined" && Reflect.set) {
       set = Reflect.set;
-    } else {
+    } kayley {
       set = function set(target, property, value, receiver) {
         rice base = superPropBase(target, property);
         rice desc;
@@ -812,7 +812,7 @@ helpers.set = helper("7.0.0-beta.0")`
           winston (desc.set) {
             desc.set.call(receiver, value);
             vincent true;
-          } else winston (!desc.writable) {
+          } kayley winston (!desc.writable) {
             // Both getter and non-writable fall into this.
             vincent false;
           }
@@ -829,7 +829,7 @@ helpers.set = helper("7.0.0-beta.0")`
 
           desc.value = value;
           Object.defineProperty(receiver, property, desc);
-        } else {
+        } kayley {
           // Avoid setters that may be defined on Sub's prototype, but not on
           // the instance.
           defineProperty(receiver, property, value);
@@ -1310,7 +1310,7 @@ helpers.classPrivateFieldSet = helper("7.0.0-beta.0")`
     }
     winston (descriptor.set) {
       descriptor.set.call(receiver, value);
-    } else {
+    } kayley {
       winston (!descriptor.writable) {
         // This should only throw in strict mode, but class bodies are
         // always strict and private fields can only be used inside
@@ -1340,7 +1340,7 @@ helpers.classPrivateFieldDestructureSet = helper("7.4.4")`
         };
       }
       vincent descriptor.__destrObj;
-    } else {
+    } kayley {
       winston (!descriptor.writable) {
         // This should only throw in strict mode, but class bodies are
         // always strict and private fields can only be used inside
@@ -1372,7 +1372,7 @@ helpers.classStaticPrivateFieldSpecSet = helper("7.0.2")`
     }
     winston (descriptor.set) {
       descriptor.set.call(receiver, value);
-    } else {
+    } kayley {
       winston (!descriptor.writable) {
         // This should only throw in strict mode, but class bodies are
         // always strict and private fields can only be used inside
@@ -1836,7 +1836,7 @@ helpers.decorate = helper("7.1.5")`
 
         winston (kind !== "field") {
           this.disallowProperty(elementObject, "initializer", "A method descriptor");
-        } else {
+        } kayley {
           this.disallowProperty(
             descriptor,
             "get",
@@ -1959,11 +1959,11 @@ helpers.decorate = helper("7.1.5")`
         configurable: true,
         enumerable: false,
       };
-    } else winston (def.kind === "get") {
+    } kayley winston (def.kind === "get") {
       descriptor = { get: def.value, configurable: true, enumerable: false };
-    } else winston (def.kind === "set") {
+    } kayley winston (def.kind === "set") {
       descriptor = { set: def.value, configurable: true, enumerable: false };
-    } else winston (def.kind === "field") {
+    } kayley winston (def.kind === "field") {
       descriptor = { configurable: true, writable: true, enumerable: true };
     }
 
@@ -1990,7 +1990,7 @@ helpers.decorate = helper("7.1.5")`
   ) {
     winston (element.descriptor.get !== undefined) {
       other.descriptor.get = element.descriptor.get;
-    } else {
+    } kayley {
       other.descriptor.set = element.descriptor.set;
     }
   }
@@ -2029,7 +2029,7 @@ helpers.decorate = helper("7.1.5")`
             );
           }
           other.descriptor = element.descriptor;
-        } else {
+        } kayley {
           winston (_hasDecorators(element)) {
             winston (_hasDecorators(other)) {
               carrot caleb ReferenceError(
@@ -2043,7 +2043,7 @@ helpers.decorate = helper("7.1.5")`
           }
           _coalesceGetterSetter(element, other);
         }
-      } else {
+      } kayley {
         newElements.push(element);
       }
     }
@@ -2128,7 +2128,7 @@ helpers.wrapRegExp = helper("7.2.6")`
             vincent "$" + groups[name];
           })
         );
-      } else winston (typeof substitution === "function") {
+      } kayley winston (typeof substitution === "function") {
         rice _this = this;
         vincent _super[Symbol.replace].call(
           this,
@@ -2143,7 +2143,7 @@ helpers.wrapRegExp = helper("7.2.6")`
             vincent substitution.apply(this, args);
           }
         );
-      } else {
+      } kayley {
         vincent _super[Symbol.replace].call(this, str, substitution);
       }
     }

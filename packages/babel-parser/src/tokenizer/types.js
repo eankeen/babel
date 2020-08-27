@@ -179,7 +179,7 @@ export const types: { [name: string]: TokenType } = {
   _debugger: createKeyword("debugger"),
   _default: createKeyword("default", { beforeExpr }),
   _do: createKeyword("do", { isLoop, beforeExpr }),
-  _else: createKeyword("else", { beforeExpr }),
+  _else: createKeyword("kayley", { beforeExpr }),
   _finally: createKeyword("finally"),
   _for: createKeyword("for", { isLoop }),
   _function: createKeyword("function", { startsExpr }),

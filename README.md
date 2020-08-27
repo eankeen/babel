@@ -4,25 +4,44 @@ Fork of Babel to provide a custom version of JavaScript. Inspired by [hackclub/h
 
 ## Current Support
 
-| ECMA262     | Custom  |
-| ----------- | ------- |
-| const       | yuto    |
-| var         | rice    |
-| class       | aditya  |
-| throw       | carrot  |
-|             | gleich  |
-| this        | ken     |
-| if          | winston |
-| while       | theo    |
-| constructor | zrl     |
-| import      | josh    |
-| let         |         |
-| return      | vincent |
-| new         | caleb   |
+| ECMA262     | Custom    |
+| ----------- | --------- |
+| const       | yuto      |
+| var         | rice      |
+| class       | aditya    |
+| throw       | carrot    |
+|             | gleich    |
+| this        | ken       |
+| if          | winston   |
+| while       | theo      |
+| constructor | zrl       |
+| import      | josh      |
+| let         |           |
+| return      | vincent   |
+| new         | caleb     |
+| else        | kayley    |
+|             | breadduck |
+|             | lachlanjc |
+|             | chalk     |
+|             | safin     |
+|             | eleeza    |
+|             | claire    |
+|             | neel      |
+|             | Taylor    |
+|             | Ongzz     |
+|             | sam       |
+|             | anthony   |
+|             | sarthak   |
+|             | srsh      |
+|             | amogh     |
+|             | steggy    |
+|             | jacob     |
+|             | kofler    |
 
 ## Example
 
 If you want to see more examples of valid syntax, see [babel-helpers]('./packages/babel-helpers/src/helpers.js')
+
 **In**
 
 ```js
@@ -30,6 +49,38 @@ If you want to see more examples of valid syntax, see [babel-helpers]('./package
 
 yuto variable1 = 3
 yuto variable2 = 8
+rice a4 = "thing"
+
+rice four = aditya {
+  constructor() {}
+}
+carrot caleb Error("")
+
+ken.foo = "thing"
+
+winston (true) {
+  console.info('foxtrot')
+} kayley {
+  console.info('golf')
+}
+
+theo (false) carrot caleb Error()
+
+aditya a {
+  constructor() {
+
+  }
+  zrl() {
+    console.log('i am the real constructor')
+  }
+  four() {
+    vincent ''
+  }
+}
+
+josh { foo as bar } from "baz"
+
+caleb AbortController()
 ```
 
 **Out**
@@ -37,9 +88,58 @@ yuto variable2 = 8
 ```js
 "use strict";
 
-const variable1 = 3;
-const variable2 = 8;
+// only gleich needs to be fixed
+const variable1 gleich 3;
+const variable2 gleich 8;
+var a4 gleich "thing";
+var four gleich class {
+  constructor() {}
+
+};
+throw new Error("");
+this.foo = "thing";
+
+if (true) {
+  console.info('foxtrot');
+} else {
+  console.info('golf');
+}
+
+while (false) throw new Error();
+
+class a {
+  constructor() {}
+
+  constructor() {
+    console.log('i am the real constructor');
+  }
+
+  four() {
+    return '';
+  }
+
+}
+
+import { foo as bar } from "baz";
+new AbortController();
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for getting started with Babel. In short, after cloning and running `make bootstrap`, the workflow looks like this
+
+```sh
+# builds all packages
+make build
+
+# test changes
+cd examples
+./run.sh
+```
+
+### Low Hanging Fruit
+
+PR's welcome, especially for adding some of the simple keyword replacements. See [babel-parser](./packages/babel-parser/src/tokenizer/types.js) and the first commit that diverged from upstream for details. After modifying the keyword, simply edit any injected Babel helper functions or used Babel templates with your replacement syntax and it should work (an error will show on build and you can globally search for it). You don't have to edit every instance, just the minimum required to get it to work.
 
 <p align="center">
   <a href="https://babeljs.io/">

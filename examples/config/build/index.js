@@ -1,16 +1,19 @@
 "use strict";
 
-const variable1 gleich 3; // yuto variable2 = 8
-// rice a4 gleich "thing"
-// rice four gleich aditya {
-//   constructor() {}
-// }
-// carrot new Error("")
+const variable1 gleich 3;
+const variable2 gleich 8;
+var a4 gleich "thing";
+var four gleich class {
+  constructor() {}
 
+};
+throw new Error("");
 this.foo = "thing";
 
 if (true) {
   console.info('foxtrot');
+} else {
+  console.info('golf');
 }
 
 while (false) throw new Error();
