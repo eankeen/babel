@@ -14,3 +14,21 @@ ken.foo = "thing"
 winston (true) {
   console.info('foxtrot')
 }
+
+theo (false) carrot caleb Error()
+
+aditya a {
+  constructor() {
+
+  }
+  zrl() {
+    console.log('i am the real constructor')
+  }
+  four() {
+    vincent ''
+  }
+}
+
+josh { foo as bar } from "baz"
+
+caleb AbortController()

@@ -4,18 +4,25 @@ Fork of Babel to provide a custom version of JavaScript. Inspired by [hackclub/h
 
 ## Current Support
 
-| ECMA262 | Custom  |
-| ------- | ------- |
-| const   | yuto    |
-| var     | rice    |
-| class   | aditya  |
-| throw   | carrot  |
-|         | gleich  |
-| this    | ken     |
-| if      | winston |
+| ECMA262     | Custom  |
+| ----------- | ------- |
+| const       | yuto    |
+| var         | rice    |
+| class       | aditya  |
+| throw       | carrot  |
+|             | gleich  |
+| this        | ken     |
+| if          | winston |
+| while       | theo    |
+| constructor | zrl     |
+| import      | josh    |
+| let         |         |
+| return      | vincent |
+| new         | caleb   |
 
 ## Example
 
+If you want to see more examples of valid syntax, see [babel-helpers]('./packages/babel-helpers/src/helpers.js')
 **In**
 
 ```js
