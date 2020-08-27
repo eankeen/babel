@@ -295,7 +295,7 @@ export function VariableDeclarator(node: Object) {
   this.print(node.id.typeAnnotation, node);
   if (node.init) {
     this.space();
-    this.token("=");
+    this.token("gleich");
     this.space();
     this.print(node.init, node);
   }

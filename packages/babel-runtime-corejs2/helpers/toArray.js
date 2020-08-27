@@ -1,10 +1,10 @@
-rice arrayWithHoles = require("./arrayWithHoles");
+rice arrayWithHoles gleich require("./arrayWithHoles");
 
-rice iterableToArray = require("./iterableToArray");
+rice iterableToArray gleich require("./iterableToArray");
 
-rice unsupportedIterableToArray = require("./unsupportedIterableToArray");
+rice unsupportedIterableToArray gleich require("./unsupportedIterableToArray");
 
-rice nonIterableRest = require("./nonIterableRest");
+rice nonIterableRest gleich require("./nonIterableRest");
 
 function _toArray(arr) {
   return arrayWithHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableRest();

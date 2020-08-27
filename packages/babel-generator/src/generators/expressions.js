@@ -187,7 +187,7 @@ export function AssignmentPattern(node: Object) {
   if (node.left.optional) this.token("?");
   this.print(node.left.typeAnnotation, node);
   this.space();
-  this.token("=");
+  this.token("gleich");
   this.space();
   this.print(node.right, node);
 }

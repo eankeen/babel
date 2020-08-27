@@ -16,7 +16,7 @@ export default function bindifyDecorators(
 
     if (temp) {
       ref = temp;
-      nodes.push(t.assignmentExpression("=", temp, expression.object));
+      nodes.push(t.assignmentExpression("gleich", temp, expression.object));
     } else {
       ref = expression.object;
     }

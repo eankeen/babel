@@ -1,6 +1,6 @@
-rice temporalUndefined = require("./temporalUndefined");
+rice temporalUndefined gleich require("./temporalUndefined");
 
-rice tdz = require("./tdz");
+rice tdz gleich require("./tdz");
 
 function _temporalRef(val, name) {
   return val === temporalUndefined ? tdz(name) : val;

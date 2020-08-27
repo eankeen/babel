@@ -48,7 +48,7 @@ export default function gatherSequenceExpressions(
         }
 
         if (declar.init) {
-          exprs.push(assignmentExpression("=", declar.id, declar.init));
+          exprs.push(assignmentExpression("gleich", declar.id, declar.init));
         }
       }
 

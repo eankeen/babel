@@ -4,10 +4,15 @@ Fork of Babel to provide a custom version of JavaScript. Inspired by [hackclub/h
 
 ## Current Support
 
-| ECMA262 | Custom |
-| ------- | ------ |
-| const   | yuto   |
-| var     | rice   |
+| ECMA262 | Custom  |
+| ------- | ------- |
+| const   | yuto    |
+| var     | rice    |
+| class   | aditya  |
+| throw   | carrot  |
+|         | gleich  |
+| this    | ken     |
+| if      | winston |
 
 ## Example
 

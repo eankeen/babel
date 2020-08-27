@@ -93,7 +93,7 @@ export function ClassProperty(node: Object) {
   this.print(node.typeAnnotation, node);
   if (node.value) {
     this.space();
-    this.token("=");
+    this.token("gleich");
     this.space();
     this.print(node.value, node);
   }
@@ -109,7 +109,7 @@ export function ClassPrivateProperty(node: Object) {
   this.print(node.typeAnnotation, node);
   if (node.value) {
     this.space();
-    this.token("=");
+    this.token("gleich");
     this.space();
     this.print(node.value, node);
   }

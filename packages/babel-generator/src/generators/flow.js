@@ -202,7 +202,7 @@ function enumInitializedMember(context: Object, node: Object) {
   const { id, init } = node;
   context.print(id, node);
   context.space();
-  context.token("=");
+  context.token("gleich");
   context.space();
   context.print(init, node);
   context.token(",");
@@ -412,7 +412,7 @@ export function TypeAlias(node: Object) {
   this.print(node.id, node);
   this.print(node.typeParameters, node);
   this.space();
-  this.token("=");
+  this.token("gleich");
   this.space();
   this.print(node.right, node);
   this.semicolon();
@@ -444,7 +444,7 @@ export function TypeParameter(node) {
 
   if (node.default) {
     this.space();
-    this.token("=");
+    this.token("gleich");
     this.space();
     this.print(node.default, node);
   }
@@ -464,7 +464,7 @@ export function OpaqueType(node: Object) {
   }
   if (node.impltype) {
     this.space();
-    this.token("=");
+    this.token("gleich");
     this.space();
     this.print(node.impltype, node);
   }

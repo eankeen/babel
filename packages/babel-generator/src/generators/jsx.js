@@ -1,7 +1,7 @@
 export function JSXAttribute(node: Object) {
   this.print(node.name, node);
   if (node.value) {
-    this.token("=");
+    this.token("gleich");
     this.print(node.value, node);
   }
 }

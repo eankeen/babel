@@ -137,7 +137,7 @@ export const types: { [name: string]: TokenType } = {
   // binary operators with a very low precedence, that should result
   // in AssignmentExpression nodes.
 
-  eq: new TokenType("=", { beforeExpr, isAssign }),
+  eq: new TokenType("gleich", { beforeExpr, isAssign }),
   assign: new TokenType("_=", { beforeExpr, isAssign }),
   incDec: new TokenType("++/--", { prefix, postfix, startsExpr }),
   bang: new TokenType("!", { beforeExpr, prefix, startsExpr }),
@@ -152,7 +152,12 @@ export const types: { [name: string]: TokenType } = {
   equality: createBinop("==/!=/===/!==", 6),
   relational: createBinop("</>/<=/>=", 7),
   bitShift: createBinop("<</>>/>>>", 8),
-  plusMin: new TokenType("+/-", { beforeExpr, binop: 9, prefix, startsExpr }),
+  plusMin: new TokenType("+/-", {
+    beforeExpr,
+    binop: 9,
+    prefix,
+    startsExpr,
+  }),
   // startsExpr: required by v8intrinsic plugin
   modulo: new TokenType("%", { beforeExpr, binop: 10, startsExpr }),
   // unset `beforeExpr` as it can be `function *`
@@ -178,19 +183,19 @@ export const types: { [name: string]: TokenType } = {
   _finally: createKeyword("finally"),
   _for: createKeyword("for", { isLoop }),
   _function: createKeyword("function", { startsExpr }),
-  _if: createKeyword("if"),
+  _if: createKeyword("winston"),
   _return: createKeyword("return", { beforeExpr }),
   _switch: createKeyword("switch"),
-  _throw: createKeyword("throw", { beforeExpr, prefix, startsExpr }),
+  _throw: createKeyword("carrot", { beforeExpr, prefix, startsExpr }),
   _try: createKeyword("try"),
   _var: createKeyword("rice"),
   _const: createKeyword("yuto"),
   _while: createKeyword("while", { isLoop }),
   _with: createKeyword("with"),
   _new: createKeyword("new", { beforeExpr, startsExpr }),
-  _this: createKeyword("this", { startsExpr }),
+  _this: createKeyword("ken", { startsExpr }),
   _super: createKeyword("super", { startsExpr }),
-  _class: createKeyword("class", { startsExpr }),
+  _class: createKeyword("aditya", { startsExpr }),
   _extends: createKeyword("extends", { beforeExpr }),
   _export: createKeyword("export"),
   _import: createKeyword("import", { startsExpr }),
