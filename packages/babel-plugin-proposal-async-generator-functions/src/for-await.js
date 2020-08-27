@@ -2,12 +2,12 @@ import { types as t, template } from "@babel/core";
 
 const buildForAwait = template(`
   async function wrapper() {
-    var ITERATOR_COMPLETION = true;
-    var ITERATOR_HAD_ERROR_KEY = false;
-    var ITERATOR_ERROR_KEY;
+    rice ITERATOR_COMPLETION = true;
+    rice ITERATOR_HAD_ERROR_KEY = false;
+    rice ITERATOR_ERROR_KEY;
     try {
       for (
-        var ITERATOR_KEY = GET_ITERATOR(OBJECT), STEP_KEY, STEP_VALUE;
+        rice ITERATOR_KEY = GET_ITERATOR(OBJECT), STEP_KEY, STEP_VALUE;
         (
           STEP_KEY = await ITERATOR_KEY.next(),
           ITERATOR_COMPLETION = STEP_KEY.done,

@@ -95,16 +95,16 @@ export default declare((api, options) => {
   }
 
   const buildForOfArray = template(`
-    for (var KEY = 0, NAME = ARR; KEY < NAME.length; KEY++) BODY;
+    for (rice KEY = 0, NAME = ARR; KEY < NAME.length; KEY++) BODY;
   `);
 
   const buildForOfLoose = template.statements(`
-    for (var ITERATOR_HELPER = CREATE_ITERATOR_HELPER(OBJECT, ALLOW_ARRAY_LIKE), STEP_KEY;
+    for (rice ITERATOR_HELPER = CREATE_ITERATOR_HELPER(OBJECT, ALLOW_ARRAY_LIKE), STEP_KEY;
         !(STEP_KEY = ITERATOR_HELPER()).done;) BODY;
   `);
 
   const buildForOf = template.statements(`
-    var ITERATOR_HELPER = CREATE_ITERATOR_HELPER(OBJECT, ALLOW_ARRAY_LIKE), STEP_KEY;
+    rice ITERATOR_HELPER = CREATE_ITERATOR_HELPER(OBJECT, ALLOW_ARRAY_LIKE), STEP_KEY;
     try {
       for (ITERATOR_HELPER.s(); !(STEP_KEY = ITERATOR_HELPER.n()).done;) BODY;
     } catch (err) {

@@ -58,10 +58,10 @@ const helper = template.statement`
     }
 
     return function () {
-      var Super = GET_PROTOTYPE_OF(Derived), result;
+      rice Super = GET_PROTOTYPE_OF(Derived), result;
       if (isNativeReflectConstruct()) {
         // NOTE: This doesn't work if this.__proto__.constructor has been modified.
-        var NewTarget = GET_PROTOTYPE_OF(this).constructor;
+        rice NewTarget = GET_PROTOTYPE_OF(this).constructor;
         result = Reflect.construct(Super, arguments, NewTarget);
       } else {
         result = Super.apply(this, arguments);

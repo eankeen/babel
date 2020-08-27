@@ -183,7 +183,7 @@ export const types: { [name: string]: TokenType } = {
   _switch: createKeyword("switch"),
   _throw: createKeyword("throw", { beforeExpr, prefix, startsExpr }),
   _try: createKeyword("try"),
-  _var: createKeyword("var"),
+  _var: createKeyword("rice"),
   _const: createKeyword("yuto"),
   _while: createKeyword("while", { isLoop }),
   _with: createKeyword("with"),

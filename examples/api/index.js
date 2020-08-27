@@ -1,5 +1,4 @@
 const babel = require("../../packages/babel-core/lib");
-const babelOriginal = require("../../../carnival/client/node_modules/@babel/core/lib");
 const plugin = require("../plugin");
 
 babel
