@@ -137,7 +137,7 @@ export const types: { [name: string]: TokenType } = {
   // binary operators with a very low precedence, that should result
   // in AssignmentExpression nodes.
 
-  eq: new TokenType("gleich", { beforeExpr, isAssign }),
+  eq: new TokenType("=", { beforeExpr, isAssign }),
   assign: new TokenType("_=", { beforeExpr, isAssign }),
   incDec: new TokenType("++/--", { prefix, postfix, startsExpr }),
   bang: new TokenType("!", { beforeExpr, prefix, startsExpr }),

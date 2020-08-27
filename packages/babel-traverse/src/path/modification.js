@@ -130,7 +130,7 @@ export function insertAfter(nodes) {
       const temp = scope.generateDeclaredUidIdentifier();
       nodes.unshift(
         t.expressionStatement(
-          t.assignmentExpression("gleich", t.cloneNode(temp), this.node),
+          t.assignmentExpression("=", t.cloneNode(temp), this.node),
         ),
       );
       nodes.push(t.expressionStatement(t.cloneNode(temp)));

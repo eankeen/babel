@@ -25,7 +25,7 @@ export function TSTypeParameter(node) {
 
   if (node.default) {
     this.space();
-    this.token("gleich");
+    this.token("=");
     this.space();
     this.print(node.default, node);
   }
@@ -408,7 +408,7 @@ export function TSTypeAliasDeclaration(node) {
   this.print(id, node);
   this.print(typeParameters, node);
   this.space();
-  this.token("gleich");
+  this.token("=");
   this.space();
   this.print(typeAnnotation, node);
   this.token(";");
@@ -454,7 +454,7 @@ export function TSEnumMember(node) {
   this.print(id, node);
   if (initializer) {
     this.space();
-    this.token("gleich");
+    this.token("=");
     this.space();
     this.print(initializer, node);
   }
@@ -520,7 +520,7 @@ export function TSImportEqualsDeclaration(node) {
   this.space();
   this.print(id, node);
   this.space();
-  this.token("gleich");
+  this.token("=");
   this.space();
   this.print(moduleReference, node);
   this.token(";");
@@ -540,7 +540,7 @@ export function TSNonNullExpression(node) {
 export function TSExportAssignment(node) {
   this.word("export");
   this.space();
-  this.token("gleich");
+  this.token("=");
   this.space();
   this.print(node.expression, node);
   this.token(";");

@@ -40,7 +40,7 @@ Fork of Babel to provide a custom version of JavaScript. Inspired by [hackclub/h
 
 ## Example
 
-If you want to see more examples of valid syntax, see [babel-helpers]('./packages/babel-helpers/src/helpers.js')
+If you want to see more examples of valid syntax, see [babel-helpers](./packages/babel-helpers/src/helpers.js)
 
 **In**
 
@@ -88,21 +88,19 @@ caleb AbortController()
 ```js
 "use strict";
 
-// only gleich needs to be fixed
-const variable1 gleich 3;
-const variable2 gleich 8;
-var a4 gleich "thing";
-var four gleich class {
+const variable1 = 3;
+const variable2 = 8;
+var a4 = "thing";
+var four = class {
   constructor() {}
-
 };
 throw new Error("");
 this.foo = "thing";
 
 if (true) {
-  console.info('foxtrot');
+  console.info("foxtrot");
 } else {
-  console.info('golf');
+  console.info("golf");
 }
 
 while (false) throw new Error();
@@ -111,13 +109,12 @@ class a {
   constructor() {}
 
   constructor() {
-    console.log('i am the real constructor');
+    console.log("i am the real constructor");
   }
 
   four() {
-    return '';
+    return "";
   }
-
 }
 
 import { foo as bar } from "baz";
